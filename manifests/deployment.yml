@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: shivakantdixitvscodeapi 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shivakantdixitvscodeapi 
+    spec:
+      containers:
+        - name: shivakantdixitvscodeapi 
+          image: skdcr.azurecr.io/shivakantdixitvscodeapi
+          ports:
+          - containerPort: 80
